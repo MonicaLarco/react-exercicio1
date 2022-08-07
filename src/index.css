@@ -1,13 +1,106 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
+}
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 75%;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #6F42C1;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  color: #6F42C1;
+}
+.navbar a:hover {
+  color: white;
+  background-color: #75d0c1;
+  border-radius: 5px;
+}
+.content {
+  max-width: 75%;
+  margin: 40px auto;
+  padding: 20px;
+}
+.grid-layout {
+  display: grid;
+  gap: 1.0rem;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 50px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* blog previews / list */
+.blog-preview-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 5px;
+}
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.blog-preview h2 {
+  font-size: 20px;
+  color: #6F42C1;
+  margin-bottom: 8px;
+}
+.blog-preview h5 {
+  color: #75d0c1;
+}
+.image-size {
+  width: 200px;
+  padding: 5%;
+}
+.sidebar {
+  border: 1px solid;
+  border-radius: 5px;
+  padding-top: 15px;
+}
+.sidebar ul {
+  list-style-type: none;
+}
+.sidebar li {
+  margin-top: 12px;
+}
+.sidebar a {
+  text-decoration: none;
+  padding: 6px;
+  color: #6F42C1;
+}
+
+.btn {
+  background-color: #6F42C1 !important;
+}
+
+@media only screen and (max-width: 480px) {
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .blog-preview-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .image-size {
+    width: 100px;
+    margin: auto;
+  }
 }
