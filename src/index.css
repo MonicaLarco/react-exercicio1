@@ -6,19 +6,39 @@
   font-family: "Quicksand";
   color: #333;
 }
+.header {
+  padding: 20px;
+  display: flex;
+  max-width: 75%;
+  margin: 0 auto;
+}
+.header .links {
+  margin-left: auto;
+}
+.header a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 2px;
+  color: #6F42C1;
+}
+.header a:hover {
+  color: #75d0c1;
+  text-decoration: underline;
+}
 .navbar {
   padding: 20px;
   display: flex;
   align-items: center;
   max-width: 75%;
   margin: 0 auto;
+  border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
   color: #6F42C1;
 }
 .navbar .links {
-  margin-left: auto;
+  margin: auto;
 }
 .navbar a {
   margin-left: 16px;
@@ -84,6 +104,10 @@
   text-decoration: none;
   padding: 6px;
   color: #6F42C1;
+}
+.sidebar a:hover {
+  color: #75d0c1;
+  text-decoration: underline;
 }
 
 .btn {
