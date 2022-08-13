@@ -1,4 +1,4 @@
-import Article from './components/Article';
+import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Header from './components/Header';
@@ -9,7 +9,7 @@ function App() {
       <Header />
       <Navbar />
       <div className="content grid-layout">
-        <Article />
+        <Home />
         <Sidebar />
       </div>     
     </div>
