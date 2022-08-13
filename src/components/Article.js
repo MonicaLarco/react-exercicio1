@@ -14,7 +14,7 @@ const Article = () => {
                     <div className="blog-preview">
                         <h2>{ blog.title }</h2>
                         <h5>Written by { blog.author }</h5>
-                        <p>{ blog.body }</p>
+                        <p>{ blog.body.slice(0, 150).trim() }</p>
                     </div>
                 </div>
             ))}

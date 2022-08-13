@@ -11,9 +11,9 @@ const Sidebar = () => {
                 </Form>
             </div>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="/">Category 1</a></li>
+                <li><a href="/blog">Category 2</a></li>
+                <li><a href="/contact">Category 3</a></li>
             </ul>
         </div>
     );
